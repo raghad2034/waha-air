@@ -12,10 +12,7 @@ I built this project to practice translating design concepts into functional cod
 No need to download any code! You can explore the live website directly here:
  [View Waha Air Live](https://raghad2034.github.io/waha-air)
 
-###  What I Learned
-* Structuring web elements clearly and effectively.
-* Styling and arranging responsive layouts.
-* Deploying a live web project using GitHub Pages.
+
 
 ---
 *Developed by Raghad Basil* 👩‍💻
