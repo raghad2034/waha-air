@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Waha Air — Your Oasis in the Sky</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark">◆</span> WAHA <span class="logo-thin">AIR</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#destinations">Destinations</a>
+      <a href="#experience">Experience</a>
+      <a href="#book">Book</a>
+    </nav>
+    <a href="#book" class="btn btn-ghost">Book a flight</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> Now flying 14 routes across the region</p>
+        <h1>Your oasis<br/>in the sky.</h1>
+        <p class="hero-sub">Waha Air connects the Gulf and the Levant with the calm of an oasis at 38,000 feet — quiet cabins, honest fares, and routes that actually get you home for dinner.</p>
+        <div class="hero-actions">
+          <a href="#book" class="btn btn-primary">Search flights</a>
+          <a href="#destinations" class="btn btn-text">See where we fly →</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 520 420" class="route-svg">
+          <path id="routePath" class="route-line" d="M 60 340 C 140 220, 220 340, 300 200 S 440 100, 470 60" />
+          <circle cx="60" cy="340" r="5" class="route-city"/>
+          <text x="60" y="365" class="route-label">AMM</text>
+          <circle cx="470" cy="60" r="5" class="route-city"/>
+          <text x="446" y="45" class="route-label">RUH</text>
+
+          <g class="plane">
+            <path d="M0 0 L14 5 L0 10 L3 5 Z" fill="var(--gold)"/>
+            <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+              <mpath href="#routePath"/>
+            </animateMotion>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section class="destinations" id="destinations">
+    <div class="section-head">
+      <p class="eyebrow eyebrow-dark"><span class="dot"></span> Where we fly</p>
+      <h2>Six cities, one calm way to reach them.</h2>
+    </div>
+
+    <div class="dest-grid">
+      <article class="dest-card reveal">
+        <div class="dest-code">AMM</div>
+        <h3>Amman</h3>
+        <p>Jordan</p>
+        <span class="dest-price">from JD 89</span>
+      </article>
+      <article class="dest-card reveal">
+        <div class="dest-code">RUH</div>
+        <h3>Riyadh</h3>
+        <p>Saudi Arabia</p>
+        <span class="dest-price">from SAR 420</span>
+      </article>
+      <article class="dest-card reveal">
+        <div class="dest-code">DXB</div>
+        <h3>Dubai</h3>
+        <p>UAE</p>
+        <span class="dest-price">from AED 380</span>
+      </article>
+      <article class="dest-card reveal">
+        <div class="dest-code">DOH</div>
+        <h3>Doha</h3>
+        <p>Qatar</p>
+        <span class="dest-price">from QAR 410</span>
+      </article>
+      <article class="dest-card reveal">
+        <div class="dest-code">CAI</div>
+        <h3>Cairo</h3>
+        <p>Egypt</p>
+        <span class="dest-price">from JD 110</span>
+      </article>
+      <article class="dest-card reveal">
+        <div class="dest-code">IST</div>
+        <h3>Istanbul</h3>
+        <p>Türkiye</p>
+        <span class="dest-price">from JD 145</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experience">
+    <div class="section-head">
+      <p class="eyebrow"><span class="dot"></span> On board</p>
+      <h2>Built for the traveler who's done with airport noise.</h2>
+    </div>
+
+    <div class="exp-grid">
+      <div class="exp-card reveal">
+        <span class="exp-num">Quiet cabins</span>
+        <p>Acoustic dampening in every cabin class, because your flight isn't the place for someone's speakerphone.</p>
+      </div>
+      <div class="exp-card reveal">
+        <span class="exp-num">On-time, actually</span>
+        <p>92% on-time departures last quarter — published every month, not just when it looks good.</p>
+      </div>
+      <div class="exp-card reveal">
+        <span class="exp-num">Fair fares</span>
+        <p>One price, shown up front. Bags, seat choice, and a meal are included on every route.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="book" id="book">
+    <div class="book-card reveal">
+      <h2>Find your flight</h2>
+      <form class="book-form" id="bookForm">
+        <div class="field">
+          <label for="from">From</label>
+          <select id="from" name="from">
+            <option>Amman (AMM)</option>
+            <option>Riyadh (RUH)</option>
+            <option>Dubai (DXB)</option>
+            <option>Doha (DOH)</option>
+            <option>Cairo (CAI)</option>
+            <option>Istanbul (IST)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="to">To</label>
+          <select id="to" name="to">
+            <option selected>Riyadh (RUH)</option>
+            <option>Amman (AMM)</option>
+            <option>Dubai (DXB)</option>
+            <option>Doha (DOH)</option>
+            <option>Cairo (CAI)</option>
+            <option>Istanbul (IST)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="depart">Departure</label>
+          <input type="date" id="depart" name="depart" />
+        </div>
+        <div class="field field-pax">
+          <label for="pax">Passengers</label>
+          <input type="number" id="pax" name="pax" min="1" value="1" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Search flights</button>
+      </form>
+      <p class="book-note" id="bookNote" role="status"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a href="#" class="logo logo-footer"><span class="logo-mark">◆</span> WAHA <span class="logo-thin">AIR</span></a>
+      <p class="footer-tag">Your oasis in the sky.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h4>Fly</h4>
+        <a href="#destinations">Destinations</a>
+        <a href="#book">Book a flight</a>
+        <a href="#">Manage booking</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About Waha</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">X</a>
+      </div>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 Waha Air. Built by Raghad Aldroubi.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
